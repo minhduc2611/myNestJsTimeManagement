@@ -48,6 +48,7 @@ export class TasksController {
     @Body() updateTaskStatusDTO: UpdateTaskStatusDTO,
   ): Promise<Task> {
     console.log(1);
+    console.log(2);
     return this.tasksService.updateTaskStatus(id, updateTaskStatusDTO);
   }
 
