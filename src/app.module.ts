@@ -4,6 +4,8 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { TasksModule } from './tasks/tasks.module';
 import { TasksRepository } from './tasks/tasks.repository';
+import { AuthModule } from './auth/auth.module';
+import { UsersModule } from './users/users.module';
 
 const username = 'leminhduc';
 const password = 'leminhduc';
@@ -23,6 +25,8 @@ const password = 'leminhduc';
       //   entities: [Task, Pet],
     }),
     TasksModule,
+    AuthModule,
+    UsersModule,
   ],
   controllers: [AppController],
   providers: [AppService],
